@@ -11,10 +11,10 @@ def about():
     return 'About'
 
 @app.route('/best')
-def index():
+def best():
     return render_template('best.html')
 
 @app.route('/sc')
-def index():
+def sc():
     name = 'John Doe'
     return render_template('sc.html', name=name)
