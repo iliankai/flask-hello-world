@@ -13,3 +13,8 @@ def about():
 @app.route('/best')
 def index():
     return render_template('best.html')
+
+@app.route('/sc')
+def index():
+    name = 'John Doe'
+    return render_template('sc.html', name=name)
