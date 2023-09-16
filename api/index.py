@@ -1,6 +1,6 @@
 from flask import Flask, render_template
 import requests
-from bs4 import BeautifulSoup
+#from bs4 import BeautifulSoup
 
 app = Flask(__name__)
 
@@ -19,7 +19,8 @@ def best():
 @app.route('/tc')
 def tc():
     return render_template('tc.html')
-    
+
+'''
 @app.route('/sc')
 def sc():
     name = 'John Doe'
@@ -38,3 +39,4 @@ def sc():
     temperature = temperature_element.text.strip()
 
     return render_template('sc.html', name=temperature)
+'''
