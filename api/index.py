@@ -16,6 +16,10 @@ def about():
 def best():
     return render_template('best.html')
 
+@app.route('/tc')
+def tc():
+    return render_template('tc.html')
+    
 @app.route('/sc')
 def sc():
     name = 'John Doe'
